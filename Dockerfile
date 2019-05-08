@@ -1,8 +1,8 @@
 # extract oe1172 zip
 FROM mcr.microsoft.com/windows/servercore:ltsc2016 AS OpenEdge
-COPY oe1172.zip .
-RUN powershell -Command Expand-Archive oe1172.zip -DestinationPath C:\Progress\OpenEdge ; \
-    Remove-Item oe1172.zip
+COPY oe1151.zip .
+RUN powershell -Command Expand-Archive oe1151.zip -DestinationPath C:\Progress\OpenEdge ; \
+    Remove-Item oe1151.zip
 
 FROM mcr.microsoft.com/windows/servercore:ltsc2016
 

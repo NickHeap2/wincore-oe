@@ -1,1 +1,1 @@
-docker build -t wincore-oe:0.1 .
+docker build -t wincore-oe:oe_11.5.1 .
