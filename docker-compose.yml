@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  wincore-oe:
+    image: wincore-oe:0.1
+    deploy:
+      replicas: 1
+    configs:
+      - source: progress_1172_cfg
+        target: C:/Progress/OpenEdge/progress.cfg
+
+configs:
+  progress_1172_cfg:
+    external: true
